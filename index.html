@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+    <span class="open-slide">
+       <a href="#" onclick="openSlideMenu()" class="menu"><!--to open the side link-->
+       &#9776;
+       </a>
+    </span>
+    <ul class="nav-links">
+       <li><a href="#" class="active">Overview</a></li>
+       <li><a href="#">Why</a></li>
+       <li><a href="#">Workflow</a></li>
+       <li><a href="#">Customers</a></li>
+       <li><a href="#">Pricing</a></li>
+       <li><a href="#">About</a></li>
+       <li class=""><a href="#" class="nav-right">Eng | Ger</a></li>
+       <li><a href="#" id="login">Login</a></li>
+       <li><a href="#" id="sign-up">Sign up</a></li>
+       <img src="logo.png" id="image">
+    </ul>
+    </div>
+   </nav>
+   <img src="logo.png" class="main-img">
+   <div id="side-menu" class="side-nav"><!--side-nav,to style the side link-->
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+       <a href="#">Overview</a>
+       <a href="#">Why</a>
+       <a href="#">Workflow</a>
+       <a href="#">Customers</a>
+       <a href="#">Pricing</a>
+       <a href="#">About</a>
+       <a href="#">Eng</a>
+       <a href="#">|Ger</a>
+       <a href="#">Login</a>
+       <a href="#">Sign up</a>
+   </div>
+   <div id="main">
+    <div class="container">
+       The missing link to <br>
+        transform your company.
+   </div>
+   </div>
+   <section id="newsletter">
+    <div class="container">
+    <form>
+        <input type="email" placeholder="Email" required>
+        <button type="submit" class="button-1">Get started</button>
+    </form>
+    <p>Trusted by big & small</p>
+        <i class="fa-brands fa-dropbox" id="icon"></i><span class=""> Dropbox</span>&nbsp;  
+        <span class="">Medium</span>&nbsp;
+        <i class="fa-brands fa-spotify" id="icon"></i><span class="spotify">&nbsp;spotify</span>
+    </div>
+   </section>
+   <section>
+    <div class="container">
+        <nav class="nav">
+            <ul class="nav-end">
+                <li><a href="" class="active-2">Overview</a></li>
+                <li><a href="">Contacts</a></li>
+                <li><a href="">Owners</a></li>
+                <li><a href="">Revenue</a></li>
+                <li><a href="">Accounting</a></li>
+                <li><a href="">Analytics</a></li>
+            </ul>
+        </nav>
+    </div>
+   </section>
+   <div class="box-1">
+    <img src="logo.png" class="box1-img">
+    <img src="plus.png" class="box2-img">
+   </div>
+   <script>
+       function openSlideMenu(){
+           document.getElementById('side-menu').style.width = '250px';
+           document.getElementById('main').style.marginLeft = '0';
+       }
+       function closeSlideMenu(){
+           document.getElementById('side-menu').style.width = '0';
+           document.getElementById('main').style.marginLeft = '0';
+       }
+   </script>
+   </script>
+</body>
+</html>
